@@ -337,23 +337,23 @@
     </div>
 
     <script>
-        
+        //Función para dejar fija y arriba la barra de navegacion al hacer scroll
         window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-var contenido = document.getElementById("contenido");
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        var contenido = document.getElementById("contenido");
 
 
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    contenido.setAttribute("style", "padding-top:101px")
-} else {
-    navbar.classList.remove("sticky");
-    contenido.setAttribute("style", "padding-top:36px")
-}
-}
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            contenido.setAttribute("style", "padding-top:101px")
+        } else {
+            navbar.classList.remove("sticky");
+            contenido.setAttribute("style", "padding-top:36px")
+        }
+        }
 
     </script>
     
