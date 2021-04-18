@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        var mensajeEscrito;
+        
+        function mostarEscrito(){
+            var txtBox1 = document.getElementById("txtBox1");
+            alert(txtBox1.value);
+        }
+
+        function mostarDosEscritos(){
+            var txtBox2 = document.getElementById("txtBox2");
+            var txtBox3 = document.getElementById("txtBox3");
+
+            if(txtBox2.value === "" || txtBox3.value === ""){
+                alert("Una o ambas cajas estan vacías, escriba algun texto");
+            }
+            else{
+                alert(txtBox2.value);
+                alert(txtBox3.value);
+            }
+        }
+
+        function mostarNombreCompleto(){
+            var txtBox4 = document.getElementById("txtBox4");
+            var txtBox5 = document.getElementById("txtBox5");
+
+            if(txtBox4.value === "" || txtBox5.value === ""){
+                alert("Una o ambas cajas estan vacías, escriba algun texto");
+            }
+            else{
+                alert(txtBox4.value + " " + txtBox5.value);
+            }
+        }
+
+        function sumarNumeros(){
+            var txtBox6 = document.getElementById("txtBox6");
+            var txtBox7 = document.getElementById("txtBox7");
+
+            if(txtBox6.value === "" || txtBox7.value === ""){
+                alert("Una o ambas cajas estan vacías, escriba algun texto");
+            }
+            else if(isNaN(txtBox6.value) || isNaN(txtBox7.value)){
+                alert("¡Ingrese solo numeros!");
+            }
+            else{
+                alert("La suma de los numeros es: " + ( parseInt(txtBox6.value) + parseInt(txtBox7.value) ) );
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Ejercicio N°1</h3>
+
+    <label for="txtBox1">Ingrese un valor o texto cualquiera</label>
+    <input type="text" id="txtBox1" name="txtBox1">
+
+    <input type="button" id="btn1" name="btn1" value="Mostrar" onClick="mostarEscrito()">
+    
+    <br><br>
+    <hr>
+
+    <h3>Ejericio N°2</h3>
+    <label for="txtBox2">Ingrese un valor o texto cualquiera</label>
+    <input type="text" id="txtBox2" name="txtBox2">
+    <br>
+
+    <label for="txtBox3">Ingrese un valor o texto cualquiera</label>
+    <input type="text" id="txtBox3" name="txtBox3">
+
+    <input type="button" id="btn2" name="btn2" value="Mostrar" onClick="mostarDosEscritos()">
+  
+    <br><br>
+    <hr>
+
+    <h3>Ejericio N°3</h3>
+    <label for="txtBox4">Ingrese su nombre</label>
+    <input type="text" id="txtBox4" name="txtBox4">
+    <br>
+
+    <label for="txtBox5">Ingrese su apellido</label>
+    <input type="text" id="txtBox5" name="txtBox5">
+
+    <input type="button" id="btn3" name="btn3" value="Mostrar" onClick="mostarNombreCompleto()">
+
+    <br><br>
+    <hr>
+    
+    <h3>Ejericio N°4</h3>
+    <label for="txtBox6">Ingrese un número</label>
+    <input type="text" id="txtBox6" name="txtBox6">
+    <br>
+
+    <label for="txtBox7">Ingrese otro número</label>
+    <input type="text" id="txtBox7" name="txtBox7">
+
+    <input type="button" id="btn3" name="btn3" value="Mostrar" onClick="sumarNumeros()">
+</body>
+</html>

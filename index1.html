@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Ejercicio 1</title>
+</head>
+<body>
+    <div>
+        <h1>Este texto esta marcado como titulo de texto</h1>
+        <p>El texto que se escribe en esta parte esta definido como párrafo dentro de la estructura del documento. 
+            <strong>Procederemos a destacara esta parte para ayudar al SEO</strong>
+            y 
+            <b>esta otra parte solo para el usuario</b>
+        </p>
+        
+        <h2>Titulo de otro texto pero menor que el anterior:</h2>
+        <p>Texto simple del párrafo por debajo del titulo. <em>Este texto se encuentra enfatizado</em></p>
+    
+        <h3>Titulo de otro texto pero menor que el anterior:</h3>
+        <p>Texto simple del párrafo por debajo del titulo. <b>Negrita, solo usuario</b> <em>cursiva enfatizada</em> <strong>para el SEO</strong>
+    </div>
+
+    <br>
+
+    <div>
+        <h1>Mostaremos una tabla estructurada</h1>
+        <table border ="1">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Partidos</th>
+                    <th>Puntos</th>
+                    <th>Dif. Gol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>La Serena</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>+2</td>
+                </tr>
+                <tr>
+                    <td>Temuco</td>
+                    <td>7</td>
+                    <td>16</td>
+                    <td>+6</td>
+                </tr>
+                <tr>
+                    <td>Rangers</td>
+                    <td>7</td>
+                    <td>15</td>
+                    <td>+8</td>
+                </tr>
+                <tr>
+                    <td>U. De Chile</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>+4</td>
+                </tr>
+                <tr>
+                    <td>Colo-Colo</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td>Iquique</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <td>Coquimbo</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>-3</td>
+                </tr>
+                <trs>
+                    <td>Audax Italiano</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>Palestino</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>-200</td>
+                </tr>
+                <tr>
+                    <td colspan = 4>
+                        <a href="https://www.google.com">Vista el buscador de google</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>Formulario de Registro</h1>
+        <form method="GET" action="index1.html">
+            <label><b>Seleccione</b></label>
+            <input type="checkbox" name="gustos" value="vacaciones">Me gusta vacacionar
+            <input type="checkbox" name="gustos" value="deportes">Me gusta jugar deportes
+            <input type="checkbox" name="gustos" value="estudiar">Me gusta estudiar
+            <br>
+
+            <label for="txtNombre"><b>Ingreso de Nombre</b></label>
+            <input type="text" id="txtNombre" name="txtNombre" placeholder="Puedes ingresar tu nombre.">
+            <br>
+
+            <label for="txtRut"><b>Ingreso de Rut</b></label>
+            <input type="text" id="txtRut" name="txtRut" placeholder="Puedes ingresar tu rut.">
+            <br>
+
+            <label for="txtPassword"><b>Ingreso de Clave</b></label>
+            <input type="password" id="txtPassword" name="txtPassword" placeholder="Puedes ingresar tu password.">
+            <br>
+
+            <label for="dpModo"><b>Seleccione modo</b></label>
+            <select name="dpModo" id="dpModoe">
+                <option value="1">Registro directo</option>
+                <option value="2">Registro indirecto</option>
+                <option value="3">Registro desfasado</option>
+            </select>
+            <br>
+
+            <label><b>Confirme</b></label>
+            <input type="radio" name="confirmar" value="1">Si
+            <input type="radio" name="confirmar" value="1">No
+            <br>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+
+<footer>
+    Final de página
+</footer>
+
+</html>
